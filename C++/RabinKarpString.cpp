@@ -9,12 +9,6 @@ using namespace std;
 
 bool search(string, string, int);
 
-
- // } Driver Code Ends
-
-
-//User function Template for C++
-
 // d is the number of characters in the input alphabet 
 #define d 256 
 
@@ -22,72 +16,6 @@ bool search(string, string, int);
 	txt -> text 
 	q -> A prime number 
 */
-bool search(string pat, string txt, int q) 
-{ 
-    //Hm basically 3 blocks bnaegein ismein 
-    n=txt.length();
-    m=pat.length();
-    int h=1;
-    for(int i=1; i<=m-1; i++){   //yha hm d^(m-1) compute krenge taki weighted sum ajae
-    h=(h*d)%q;        //ye value niche use hogi function mein
-    }
-    //is niche wale block mein hm hash function compute krenge aur q ko isliye use krhe taki value bhaut bdi na use ho jave
-    int p=0;
-    int t=0
-    //yha loop lgaingein pattern ki length tk
-    for(int i=0; i<m; i++){
-    //horner rule lgainge ismein see notes
-    p=(p * d + pat[i]) % q;   //pat ka hash function
-    t=(t * d + txt[i]) % q;   //txt ka hash function
-    }
-    //is wale block mein hm search krenge sliding window ko agr match hogai to flag ko true krdenge agr nhi hoi to false krdenge
-    //ye asli function he yha yha loop lgadenge m-1 tk
-    for (int i = 0; i <= n-m; i++)   //is loop mein pattern checking hogi
-    {
-        if(p==t){         //agr p jo ki he pateern ka hash function eguall hoa text ke hash function se
-        flag = true;    //flag ko true krdenge
-        // aur loop mein chlejainge
-        for(int j=0; j<m; j++){    //yha pe pattern ki lenght tk jaenge
-           if(txt[i+j]!=pat[j]){    //agr pattern hr iter pe match na hoa to flag ko false nhi to true pe print krrdenge
-               flag=false;
-               break;
-           }
-           if(flag==true){
-               print(i);   
-           }
-        }
-        }
-    
-    //is wale block mein hmm next sling window that is txt(i+1) compute krenge
-    //upr wali condition mein hmm last window ko nhi denkhegein
-    //niche ek condition he ki jb value negative mein chli gai to value hm q add krdenge taki second block mein  dikat na ave
-    if(i<n-m){
-     t = ((d * (t - txt[i] * h) + txt[i+m]) % q);   //next sliding window pattern ki compute kri
-    }
-    if(t < 0){
-        //agr t minus mein gya to add krdenge q ki value
-        t = t + q;
-    }
-} 
-}
-// { Driver Code Starts.
-
-/* Driver program to test above function */
-int main() 
-{ 
-    int t;
-    cin >> t;
-    
-    while(t--){
-	    string s, p;
-	    cin >> s >> p;
-	    int q = 101; // A prime number 
-	    if(search(p, s, q)) cout << "Yes" << endl;
-	    else cout << "No" << endl;
-    }
-	return 0; 
-} 
-  // } Driver Code Ends
 
 //Modified
 bool search(string pat, string txt, int q) 
@@ -96,7 +24,6 @@ bool search(string pat, string txt, int q)
     int n=txt.length();
     int m=pat.length();
     int h=1;
-    //mistake-> start loop from i=0
     for(int i=0; i<m-1; i++){   //yha hm d^(m-1) compute krenge taki weighted sum ajae
         h=(h*d)%q;        //ye value niche use hogi function mein
     }
@@ -123,7 +50,7 @@ bool search(string pat, string txt, int q)
                    break;
                }
             }
-            if(flag==true){  //mistake-> put this if outside for loop
+            if(flag==true){  
                return true;  
             }
         }
@@ -142,3 +69,18 @@ bool search(string pat, string txt, int q)
     } 
     return false;
 }
+int main() 
+{ 
+    int t;
+    cin >> t;
+    
+    while(t--){
+	    string s, p;
+	    cin >> s >> p;
+	    int q = 101; // A prime number 
+	    if(search(p, s, q)) cout << "Yes" << endl;
+	    else cout << "No" << endl;
+    }
+	return 0; 
+} 
+  // } Driver Code Ends
