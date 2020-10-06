@@ -1,0 +1,30 @@
+server {
+
+    listen       80;
+    server_name  _;
+
+    charset utf-8;
+
+    access_log  /var/log/docker/${HOSTNAME}/nginx/access/${VHOST}.log  main;
+    error_log /var/log/docker/${HOSTNAME}/nginx/error/${VHOST}.log  warn;
+
+
+    index index.php;
+
+    root /var/www/public;
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    if (!-e $request_filename) {
+        rewrite ^/(.*)$ /index.php$is_args$args;
+    }
+
+    location ~ \.php$ {
+        fastcgi_pass      ${PHP_FPM_SERVICE_NAME}:9000;
+        fastcgi_index     index.php;
+        include           fastcgi.conf;
+    }
+
+}
