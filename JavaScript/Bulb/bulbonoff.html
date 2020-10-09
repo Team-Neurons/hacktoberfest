@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+       
+       function bulb_off()
+        {
+            document.getElementById("img1").src="img/pic_bulboff.gif";
+        }
+        function bulb_on()
+        {
+            document.getElementById("img1").src="img/pic_bulbon.gif";
+        }
+        </script>
+        <style>
+         .btn
+         {
+             padding: 10px;
+             margin: 10px;
+             background-color:crimson;
+         }
+         .btn1
+         {
+             padding: 10px;
+             margin: 10px;
+             background-color: darkgreen;
+         }
+        </style>
+    </head>
+<body>
+    <div class="btn"><center><button onclick="bulb_off()" >Turn Off The Bulb</button></center></div>
+   <center> <img id="img1" src="img/pic_bulboff.gif" width="170px"></center>
+    <div class="btn1"><center><button onclick="bulb_on()" >Turn On The Bulb</button></center></div>
+</body>
