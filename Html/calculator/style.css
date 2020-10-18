@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(to right,rgb(150, 150, 223), rgb(216, 175, 175), rgb(221, 153, 221));
+    font-family: verdana;
+}
+
+.calculator {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px 40px;
+    border: 1px solid #777;
+    background: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: rgb(9, 72, 94);
+    /* text-shadow:  */
+}
+
+label {
+    color: #555;
+}
+
+label, input {
+    display: block;
+    margin: 15px;
+    padding: 6px; 
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    text-align: center;
+    background: rgb(72, 74, 187);
+    color: #fff;
+    margin: 10px auto;
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+}
+#oparator{
+    margin: auto;
+    background-color: cornsilk;
+}
+.center {
+    margin: auto;
+}
