@@ -22,5 +22,5 @@ function tanggalMerah($value)
 //testing
 $hari_ini = date("Ymd");
 
-echo "<b>Check untuk hari ini (" . date("d-m-Y", strtotime($hari_ini)) . ")</b><br>";
+print "<b>Check untuk hari ini (" . date("d-m-Y", strtotime($hari_ini)) . ")</b><br>";
 tanggalMerah($hari_ini);
