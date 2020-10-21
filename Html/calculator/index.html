@@ -2,21 +2,26 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Table Calculate Basic</h2>
-
-<div>
-    <input id="in1" type="text" />
-    <input id="oparator" style="width: 20px;" type="text" maxlength="1"/>
-    <input id="in2" type="text" />
-    <input type="button" onclick="calculate()" value="compute" />
-  
-    <p id="pattern">
-    <p id="sum"></p>
+<div class="calculator">
+  <div class="banner">
+      <h2>Table Calculate Basic</h2>
   </div>
-
+  <form action="">
+      <label for="First number">Type Your First Input</label>
+      <input class="center" id="in1" type="text" required />
+      <br>
+      <input id="oparator" style="width: 20px;" type="text" maxlength="1" required />
+      <label for="second number">Type Your Second Input:</label>
+      <input class="center" id="in2" type="text" required />
+      <input type="button" onclick="calculate()" value="Calculate" />
+      <p id="Equation">
+        <p id="sum"></p>
+  </form>
+  </div>
 </body>
 </html>
 
