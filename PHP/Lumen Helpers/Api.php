@@ -10,7 +10,7 @@ class Api{
     }
 
     public static function get($reqPath, $data=''){
-        $path  = Api::base().''.$reqPath;
+        $path  = $this->bath($reqPath);
 
         $response = Http::get($path, $data);
         $result   = json_decode($response->body());
@@ -19,12 +19,15 @@ class Api{
     }
 
     public static function post($reqPath, $data){
-        $path  = Api::base().''.$reqPath;
+        $path  = $this->bath($reqPath);
         
         $response = Http::post($path, $data);
         $result   = json_decode($response->body());
 
         return $result->data;
+    }
+    private function bath($reqPath){
+        return Api::base().''.$reqPath;
     }
 
 }
