@@ -1,0 +1,83 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:snf="http://www.smartnews.be/snf" version="2.0">
+  <channel>
+    <title>BuzzFeed News</title>
+    <link>https://www.buzzfeednews.com</link>
+    <atom:link href="https://www.buzzfeednews.com/section/world.xml" rel="self"/>
+    <language>en</language>
+    <copyright>Copyright 2020 BuzzFeed, Inc.</copyright>
+    <description>BuzzFeed, Reporting To You</description>
+    <lastBuildDate>Fri, 02 Oct 2020 10:46:05 +0000</lastBuildDate>
+    <managingEditor>editor@buzzfeed.com (https://www.buzzfeednews.com/article/buzzfeednews/about-buzzfeed-news)</managingEditor>
+    <webMaster>editor@buzzfeed.com (https://www.buzzfeednews.com/article/buzzfeednews/about-buzzfeed-news)</webMaster>
+    <image>
+      <url>https://webappstatic.buzzfeed.com/static/images/public/rss/logo-news.png</url>
+      <title>BuzzFeed News</title>
+      <link>https://www.buzzfeednews.com</link>
+    </image>
+    <media:content url="https://uppic.cc/d/yv48" type="image/png" height="205.99px" width="430px"/>
+    <item>
+      <title>Odio sem pulvinar in quam sed nulla id sed.</title>
+      <description>
+        Nunc habitant morbi sit nunc. Sit vulputate porta...
+      </description>
+      <category>Rss tutorial</category>
+      <link>https://www.buzzfeednews.com/article/pranavdixit/activists-demand-facebook-suspend-indian-executive</link>
+      <pubDate>Fri, 02 Oct 2020 10:46:05 +0000</pubDate>
+      <guid isPermaLink="false">https://www.buzzfeednews.com/article/pranavdixit/activists-demand-facebook-suspend-indian-executive</guid>
+      <media:content url="https://uppic.cc/d/yv48" type="image/png" height="205.99px" width="430px"/>
+      <dc:creator>Pranav Dixit</dc:creator>
+    </item>
+    <item>
+      <title>At nunc tristique vestibulum sit cras felis amet amet, amet.</title>
+      <description>
+       THIS is a description 
+      </description>
+      <category>Rss tutorial</category>
+      <link>https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</link>
+      <pubDate>Wed, 09 Sep 2020 14:27:21 -0400</pubDate>
+      <guid isPermaLink="false">https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</guid>
+      <media:content url="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/9/14/campaign_images/447de0693e1c/the-trump-administration-is-considering-excluding-2-1779-1599661637-0_dblbig.jpg" type="image/png" height="200px" width="200px"/>
+      <dc:creator>Hamed Aleaziz</dc:creator>
+    </item>
+    <item>
+      <title>At nunc tristique vestibulum sit cras felis amet amet, amet.</title>
+      <description>
+       THIS is a description 
+      </description>
+      <category>Rss tutorial</category>
+      <link>https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</link>
+      <pubDate>Wed, 09 Sep 2020 14:27:21 -0400</pubDate>
+      <guid isPermaLink="false">https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</guid>
+      <media:content url="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/9/14/campaign_images/447de0693e1c/the-trump-administration-is-considering-excluding-2-1779-1599661637-0_dblbig.jpg" type="image/png" height="200px" width="200px"/>
+      <dc:creator>Hamed Aleaziz</dc:creator>
+    </item>
+    <item>
+      <title>At nunc tristique vestibulum sit cras felis amet amet, amet.</title>
+      <description>
+       THIS is a description 
+      </description>
+      <category>Rss tutorial</category>
+      <link>https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</link>
+      <pubDate>Wed, 09 Sep 2020 14:27:21 -0400</pubDate>
+      <guid isPermaLink="false">https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</guid>
+      <media:content url="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/9/14/campaign_images/447de0693e1c/the-trump-administration-is-considering-excluding-2-1779-1599661637-0_dblbig.jpg" type="image/png" height="200px" width="200px"/>
+      <dc:creator>Hamed Aleaziz</dc:creator>
+    </item>
+    <item>
+      <title>55555555555</title>
+      <description>
+       55555
+      </description>
+      <category>Rss tutorial</category>
+      <link>https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</link>
+      <pubDate>Wed, 09 Sep 2020 14:27:21 -0400</pubDate>
+      <guid isPermaLink="false">https://www.buzzfeednews.com/article/hamedaleaziz/trump-immigrant-children-pandemic-border-order</guid>
+      <media:content url="https://img.buzzfeed.com/buzzfeed-static/static/2020-09/9/14/campaign_images/447de0693e1c/the-trump-administration-is-considering-excluding-2-1779-1599661637-0_dblbig.jpg" type="image/png" height="200px" width="200px"/>
+      <dc:creator>Hamed Aleaziz</dc:creator>
+    </item>
+  </channel>
+</rss>
