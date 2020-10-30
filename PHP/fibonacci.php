@@ -7,6 +7,12 @@ function getFib($n) {
     }
     return $fib_array;
 }
-
+function recursiveFib($n){ 
+    if ($n == 0||$n == 1) 
+        return $n;     
+    else
+        return (recursiveFib($n-1) +  
+                recursiveFib($n-2)); 
+} 
 echo "<pre>";
 print_r(getFib(50));
