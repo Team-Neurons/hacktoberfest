@@ -1,0 +1,18 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+int arr[50];
+
+for(int i=0;i<49;i++){
+
+arr[i]=i+1;}
+
+for(int i=0;i<49;i++){
+
+cout<<arr[i]<<endl;}
+
+}
+
